@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 16px;	
+  text-align: left;
+  background: url("../images/september_sky.jpg");
+  background-size: cover;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+}
+
+header{
+	background-color: #fff;
+	padding: 20px;
+	font-size: 20px;
+}
+
+h1{
+	color: #00BDA2;
+}
+
+a{
+	color: #6CFFFF;
+	text-decoration: none;
+}
+
+nav a{
+	color: #585858;
+	font-weight: 800;
+	margin-right: 10px;
+	padding-right: .25em;
+	font-size: .75em;
+}
+
+.logo { 
+	font-family: 'Source Sans Pro', 'Arial', sans-serif;
+	letter-spacing: 3px;
+	color: #00BDA2;
+	font-size: 2em; 
+}
+
+hr{
+  width: 180px;
+  border: none;
+}
+
+p {
+font-size: 1em;
+width: 30em;
+line-height: 1.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+h2, h3{
+margin: 20px;
+padding-left: 20px;
+}
+
+footer{
+background-color: #fff;
+color: #4A1800;
+font-size: 8px;
+padding: 20px;
+text-align: left;
+}
