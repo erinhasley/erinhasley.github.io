@@ -30,6 +30,10 @@ header{
 	font-size: 20px;
 }
 
+.tagline {
+	color: #000;
+}
+
 h1{
 	color: #00BDA2;
 }
@@ -40,20 +44,49 @@ a{
 	text-decoration: none;
 }
 
+nav{
+
+
+}
+
 nav a{
-	/*background-color: E8C66A;
+	/*adjust the four sides of padding today 9/24/17*/
+	background-color: #E8C66A;
 	border: 1px black solid;
-	padding: 30px;*/
+	/*padding: 30px;*/
 	color: #585858;
 	text-transform: uppercase;
 	letter-spacing: .125em;
 	font-weight: 800;
 	margin: 0 5px;
-	padding: 0 5px;
+	float: left;
+	padding: 10px 10px 15px;
 	border: none;
 	font-size: .75em;
+	display: block;
 
 }
+
+.description{
+	float: left;
+	width: 560px;
+	padding: 20px 0;
+	margin: 0 0 30px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+nav a:hover {
+	background-color: #aaaaaa;
+}
+
 
 .logo { 
 	font-family: 'Source Sans Pro', 'Arial', sans-serif;
@@ -68,11 +101,57 @@ hr{
   border: none;
 }
 
+/*.one {
+	float: left;
+	width: 560px;
+	padding: 20px 0;
+	margin: 0 0 30px;
+}
+probably not needed, from Week 5*/
+
+
+#two_column {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+
+}
+
+#left {
+	background-color: violet;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 62%;
+}
+
+#right {
+	background-color: pink;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 30%;
+
+
+}
+
+
+
 article{
 	background-color: #E89C6C;
 	border: 1px black solid;
 	padding: 20px;
 
+
+}
+
+aside{
+	float: right;
+	font-size: 14px;
+	color: #000;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 20px 0;	
 
 }
 
@@ -104,13 +183,34 @@ h2, h3{
   padding-left: 20px;
 }
 
+h4{
+	margin: 10px;
+}
+
 footer{
   background-color: #FF957E;
   border: 1px black solid;
-  padding: 20px;
+  padding: 10px;
 /*background-color: #fff;
 color: #4A1800;
 font-size: 8px;
 padding: 20px;
 text-align: left;*/
+}
+
+#mailto {
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.5em;
+  padding-left: 10px;
+ }
+
+.clearfix:footer {
+	align: bottom;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
 }

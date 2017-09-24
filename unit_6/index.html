@@ -2,20 +2,28 @@
 <html>
 	<head>
 	<title>Diane Hasley Encaustics</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
-		<header>
-			<nav><a class="logo" href="#">Diane Hasley | Encaustic Art</a>
-			<a href="#">About Encaustic</a><a href="#">Work</a><a href="#">Past Shows</a><a href="#">Bio</a><a href="#">Contact</a></nav>
-		</header>
+	<header>
+				<a class="logo" href="index.html">Diane Hasley | Encaustic Art</a>
+<!--it might be ok to have this home logo be an h1 with an html ID (above)-->
+		<nav class="clearfix">
+			<a href="about.html">About Encaustic</a>
+			<a href="work.html">Work</a>
+			<a href="past.html">Past Shows</a>
+			<a href="bio.html">Bio</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
 	
-			<p>Wax paintings with themes inspired by nature.</p>
+			<p class="tagline">Wax paintings with themes inspired by nature.</p>
 
-			<p>Melted beeswax, colored pigments and heat are the basis for encaustic art.</p> 
+			<p class="tagline">Melted beeswax, colored pigments and heat are the basis for encaustic art.</p> 
 
-	<section class="one">
+	<section id="two_column" class="clearfix">	
 	<article class="description">
 		<h2>About Encaustic</h2>
 
@@ -25,11 +33,24 @@
 	
 			<p>Even though this is an enduring medium, works in encaustic should not be subjected to extremes of heat or below freezing temperatures.  The wax surface may be buffed with a soft cloth. </p>
 	</article>
+	
+	<aside id="right">
+		
+		<h3>Aside</h3>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</p>
+	</aside>
 	</section>
+	
+
 
 
 		<h2>Past Shows</h2>
-	<section class="two">
+	<section class="clearfix">
 	<article class="description">	
 			<h3>Colours of the Bay: Encaustic Works Inspired by the Skies over Southern Georgian Bay</h3>	
 
@@ -44,7 +65,7 @@
 	</article>	
 	</section>
 
-	<section class="three">
+	<section class="clearfix">
 	<article class="description">
 			<h3>Water Changes; Water Changes Everything</h3>
 
@@ -60,16 +81,16 @@
 	</article>	
 	</section>	
 
-	<ul>
+	<ul>[This will be a drop-down menu associated with nav element &lsquo;Work&rsquo;]:
 		<li>Encaustic Shadow Boxes</li>
 		<li>Low Heat Encaustic Prints (Framed)</li>
 		<li>Wall Panels</li>
 
 	</ul>
-			<p id="mailto"> Contact the <a href="mailto:theartist@gmail.com">artist.</a>
-			</p>
-			<p id="goto">Go to <a href="#">top</a></p>
-<footer><h4>Ⓒ 2017 Diane Hasley</h4>
+			
+<footer class="clearfix">
+			<p id="mailto"> Contact the <a href="mailto:theartist@gmail.com">artist.</a></p>
+			<h4>Ⓒ 2017 Diane Hasley</h4>
 </footer>
 	</div>
 </body>
