@@ -41,7 +41,7 @@ h1{
 a{
 	color: #6CFFFF;
 	text-decoration: none;
-	padding-left: 2em;
+	padding-left: .5em;
 }
 
 nav{
@@ -87,6 +87,7 @@ figure img{
 
 figcaption{	
 	padding: 1em 0 .5em 0;
+	line-height: 1.75;
 }
 
 .clearfix:after{
@@ -104,7 +105,7 @@ figcaption{
 	letter-spacing: 3px;
 	color: #fff;
 	font-size: 3em; 
-	}
+}
 
 hr{
   width: 100%;
@@ -167,8 +168,13 @@ footer {
 	padding: 1em;
 }
 
+footer a{
+	padding: 1em 1em 1em 1em;
+}
+
 footer h4 {
 	float: right;
+	padding-right: 2em;
 }
 
 #less {
