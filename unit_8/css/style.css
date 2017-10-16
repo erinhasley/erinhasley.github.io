@@ -15,12 +15,17 @@ body {
   	color: #fff;
   	font-family: Helvetica, Arial, sans-serif;
   	line-height: 1.3;
-  	padding-left: 2em;
+  	padding-left: 0em;
 }
 
 header {
 	padding: 2em 0;
 }
+
+main {
+	min-height: calc(100vh - 459px);
+}
+/*this is header and footer added together, vh is view height. it keeps the footer at the bottom.*/
 
 .tagline {
 	color: #fff;
@@ -50,7 +55,7 @@ nav{
 }
 
 /* LoVe HAte a:link means unvisited links. like blue ones, in Google, for example. (purple = already visited)*/
-nav a:link {
+nav a {
 	color: #52F5E7;
 	text-transform: uppercase;
 	letter-spacing: .125em;
@@ -105,6 +110,7 @@ figcaption{
 	letter-spacing: 3px;
 	color: #fff;
 	font-size: 3em; 
+	padding-left: 1em;
 }
 
 hr{
@@ -203,14 +209,9 @@ footer h4 {
 	font-size: 0;
 }
 
-/* css reset */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
 
-@media only screen and (min-width: 1900px){
+
+@media  screen and (min-width: 1900px){
 	body {
 		font-size: 24px;
 	}
@@ -241,14 +242,17 @@ or even more ideally a vertical scrolling thing, for mobile? also would like nav
  	#mobile {
  		display: block;
  	}
- 	nav: hover a {
+ 	nav:hover a {
  		display:block;
  	}
+
+ 	.logo span{
+ 		visibility: none;
  	}
 
-footer {
-	float: none;
-	text-align: left;
+	footer {
+		float: none;
+		text-align: left;
 	}
 }
 
