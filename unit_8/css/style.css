@@ -221,14 +221,15 @@ box-sizing: border-box;
 
 @media screen and (max-width: 1190px){
 	.lheatpaintings{
-	width: 48%;
-	padding: 1%;
-	float: left;
+		width: 48%;
+		padding: 1%;
+		float: left;
+		height: 387px;
 }
 }
 
-/* b/c current content is ok until around 1190 px trying to get a grid of four images,
-or even more ideally a vertical scrolling thing for mobile? also would like navigation to be replaced by a tappable hamburger*/
+/* b/c current content seems ok until around 1190 px trying to get a grid of four images,
+or even more ideally a vertical scrolling thing, for mobile? also would like navigation to be replaced by a tappable hamburger*/
 
 @media screen and (max-width: 768px){
  	nav a {
@@ -253,7 +254,9 @@ footer {
 
 /* mobile */
 @media screen and (max-width: 568px){
- {
-width: 29%;
-}
+	.lheatpaintings{
+		width: 100%;
+		float: none;
+		height: auto;
+	}
 }
