@@ -162,16 +162,16 @@ h2, h3{
 }
 
 h4 {
-	padding-left: 1.75em;
 	color: #EDF7FA;
-	display: inline;	
+	display: inline;
+	padding-left: 1.75em;	
 }
 footer {
 	clear: both;
 	font-size: .8em;
 	text-align: left;
 	background-color: #4AB39A;
-	padding: 1.75em 0 3em 1.75em;
+	padding: 3em 0 3em 0;
 }
 
 #circumflex { 
@@ -220,7 +220,7 @@ or even more ideally a vertical scrolling thing, for mobile? also would like nav
 @media screen and (max-width: 768px){
  	
  	.logo{
- 		text-align:center;
+ 		text-align           s:center;
  	}
  	nav a {
  		float: none;
@@ -239,14 +239,21 @@ or even more ideally a vertical scrolling thing, for mobile? also would like nav
  		display:none;
  	}
 }
-/* where footer needs to stack */
 
 @media screen and (max-width: 645px){
 
 footer {
 		float: none;
-		padding-left: 2em;	
+		padding-left: 1.75em;	
 }
+
+@media screen and (max-width: 584px){
+	span {
+		
+	}
+
+}
+
 
 /* mobile */
 
@@ -256,4 +263,7 @@ footer {
 		float: none;
 		height: auto;
 	}
+footer {
+		float: none;
+}
 }
