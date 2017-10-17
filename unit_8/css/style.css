@@ -60,11 +60,11 @@ nav a {
 	text-transform: uppercase;
 	letter-spacing: .125em;
 	font-weight: 800;
-	margin: 1.75em 0 0 2.125em;
 	float: left;
 	border: none;
 	font-size: .75em;
 	display: block;
+	margin-top: 1em;
 	padding: 1em 1em 1em 1em;
 }
 
@@ -74,7 +74,7 @@ nav a:visited{
 
 nav a:hover {
 	color: #fff;
-	background-color: #7bc01a;
+	background-color: #7190c7/*#7bc01a;*/
 }
 
 nav a:active {
@@ -88,10 +88,11 @@ img {
 figure img{
 	max-width: 734px;
 	display: block;
+	padding-left: .75em;
 }
 
 figcaption{	
-	padding: 1em 0 .5em 0;
+	padding: 1em 0 .5em .75em;
 	line-height: 1.75;
 }
 
@@ -110,7 +111,7 @@ figcaption{
 	letter-spacing: 3px;
 	color: #fff;
 	font-size: 3em; 
-	padding-left: 1em;
+	padding-left: .75em;
 }
 
 hr{
@@ -125,11 +126,12 @@ hr{
 
 #mobile{
 	display: none;
+	font-size: 1.5em;
 }
 
 .lheatpaintings{
 	width: 23%;
-	padding: 1%;
+	padding-left:1.25em;
 	margin: 1%;
 	float: left;
 }
@@ -142,13 +144,10 @@ i{
 	color: #000;
 }
 
-#goto{ 
-	color: #000;
-}
-
 p {
   font-size: 1em;
   line-height: 1.5em;
+  padding-left: .75em;
   padding-right: 2em;
 }
 
@@ -162,34 +161,22 @@ h2, h3{
   padding-left: 2em;
 }
 
-h4{
-	padding-left: 2em;
+h4 {
+	padding-left: 1.75em;
+	color: #EDF7FA;
+	display: inline;	
 }
-
 footer {
 	clear: both;
 	font-size: .8em;
 	text-align: left;
 	background-color: #4AB39A;
-	padding: 1em;
+	padding: 1.75em 0 3em 1.75em;
 }
 
-footer a{
-	padding: 1em 1em 1em 1em;
-}
-
-footer h4 {
-	float: right;
-	padding-right: 2em;
-}
-
-#less {
-	margin: 1.75em 0 0 2.125em;
-	float: left;
-	border: none;
-	font-size: .75em;
-	display: block;
-	padding: 1em 1em 1em 1em;
+#circumflex { 
+	color: #52F5E7;
+	display: inline;
 }
 
 #mailto {
@@ -200,7 +187,7 @@ footer h4 {
  }
 
 .clearfix:footer {
-	align: bottom;
+	align: left;
 	visibility: hidden;
 	display: block;
 	content: " ";
@@ -208,8 +195,6 @@ footer h4 {
 	height: 0;
 	font-size: 0;
 }
-
-
 
 @media  screen and (min-width: 1900px){
 	body {
@@ -233,6 +218,10 @@ footer h4 {
 or even more ideally a vertical scrolling thing, for mobile? also would like navigation to be replaced by a tappable hamburger*/
 
 @media screen and (max-width: 768px){
+ 	
+ 	.logo{
+ 		text-align:center;
+ 	}
  	nav a {
  		float: none;
  		width: auto;
@@ -246,17 +235,21 @@ or even more ideally a vertical scrolling thing, for mobile? also would like nav
  		display:block;
  	}
 
- 	.logo span{
- 		visibility: none;
+ 	span{
+ 		display:none;
  	}
+}
+/* where footer needs to stack */
 
-	footer {
+@media screen and (max-width: 645px){
+
+footer {
 		float: none;
-		text-align: left;
-	}
+		padding-left: 2em;	
 }
 
 /* mobile */
+
 @media screen and (max-width: 568px){
 	.lheatpaintings{
 		width: 100%;
