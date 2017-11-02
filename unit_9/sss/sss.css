@@ -49,3 +49,7 @@
 .sssprev:hover, .sssnext:hover {
 	cursor: pointer;
 }
+
+.caption {
+	font-family: Helvetica, Arial, sans-serif;
+}

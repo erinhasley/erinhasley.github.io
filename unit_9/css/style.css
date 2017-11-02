@@ -41,9 +41,9 @@ h1{
 }
 
 a{
-	color: #6CFFFF;
+	color: #f87744;
 	text-decoration: none;
-	padding-left: .5em;
+	/*padding-left: .5em;*/
 }
 
 a span {
@@ -149,8 +149,9 @@ i{
 p {
   font-size: 1em;
   line-height: 1.5em;
-  padding-left: .75em;
+  padding-left: 2.5em;
   padding-right: 2em;
+  color: #422418;
 }
 
 ul {
@@ -161,6 +162,7 @@ ul {
 
 h2, h3{
   padding-left: 2em;
+  color: #000;
 }
 
 h4 {
@@ -214,10 +216,12 @@ footer {
 		float: left;
 		height: 387px;
 }
+	.bio {
+	width: 25%;
+	padding-top: 2em;
+	padding-left: 2em;
+		}
 }
-
-/* b/c current content seems ok until around 1190 px trying to get a grid of four images,
-or even more ideally a vertical scrolling thing, for mobile? also would like navigation to be replaced by a tappable hamburger*/
 
 @media screen and (max-width: 768px){
  	
@@ -236,6 +240,15 @@ or even more ideally a vertical scrolling thing, for mobile? also would like nav
  	nav:hover a {
  		display:block;
  	}
+
+ 	.bio {
+ 		width: 25%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	height: auto;
+    	padding-top: 10px;
+ 	}
 }
 
 @media screen and (max-width: 645px){
@@ -245,13 +258,13 @@ footer {
 		padding-left: 1.75em;	
 }
 
-@media screen and (max-width: 584px){
+/* @media screen and (max-width: 584px){
 	span {
 		
 	}
 
 }
-
+*/
 
 /* mobile */
 
@@ -264,4 +277,12 @@ footer {
 footer {
 		float: none;
 }
+
+	.bio {
+		width: 139px;
+		float: none;
+		text-align: center;
+		padding-top: 2em;
+		padding-left: 2em;
+	}
 }
