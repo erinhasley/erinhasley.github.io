@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 body {
@@ -9,14 +9,13 @@ body {
   	text-align: left;
   	background: #fff;
   	background-size: cover;
-  	color: #fff;
   	font-family: Helvetica, Arial, sans-serif;
   	line-height: 1.3;
-  	padding-left: 0em;
+  	padding-left: 2em;
 }
 
 header {
-	padding: 2em 0;
+	padding: 2em 0 0 0;
 }
 
 main {
@@ -24,40 +23,46 @@ main {
 }
 /*this is header and footer added together, vh is view height. it keeps the footer at the bottom.*/
 
+.logo { 
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	text-transform: none;
+	letter-spacing: 2px;
+	color: #186A89;
+	font-size: 3em; 
+}
+
 .tagline {
-	color: #fff;
-	padding-top: 4em;
+	color: #f87744;
+	margin-top: 4em;
+	padding-bottom: 2em;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	font-size: .7em;
 }
 
-#lower {
-	letter-spacing: 1px;
-	text-transform: none;
-}
-
-h1{
+h1 {
 	color: #00BDA2;
 }
 
-a{
-	color: #f87744;
+
+a {
+	color: #186a89;
 	text-decoration: none;
-	/*padding-left: .5em;*/
+	
 }
 
 a span {
-
 	display: block;
-	padding-left: 1em;
-}
-nav{
-	padding-left: 2em;
-	text-align: center;
+	padding-left: .5em;
 }
 
-/* LoVe HAte a:link means unvisited links. like blue ones, in Google, for example. (purple = already visited)*/
-nav a {
+nav {
+	padding-left: 2em;
+	/*text-align: center;*/
+}
+
+ /*LoVe HAte a:link means unvisited links. like blue ones, in Google, for example. (purple = already visited)*/
+nav a:link {
 	color: #186A89;
 	text-transform: uppercase;
 	letter-spacing: .125em;
@@ -67,16 +72,15 @@ nav a {
 	font-size: .75em;
 	display: block;
 	margin-top: 1em;
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 1em 0em;
 }
 
-nav a:visited{
+nav a:visited {
 
 }
 
 nav a:hover {
 	color: #f87744;
-	/*background-color: #7190c7 #7bc01a;*/
 }
 
 nav a:active {
@@ -87,18 +91,30 @@ img {
 	width: 100%;
 }
 
-figure img{
+img:#sm_panel_hor {
+	width: 175%;
+}
+
+figure img {
 	max-width: 734px;
 	display: block;
 	padding-left: .75em;
 }
 
-figcaption{	
-	padding: 1em 0 .5em .75em;
+figcaption {	
+	padding: 1em 0 .5em 1em;
 	line-height: 1.75;
+	color: #696969;
+	font-size: .75em;
 }
 
-.clearfix:after{
+#sm_panel_hor {
+	max-width: 1712px;
+	display: block;
+	padding-left: .75em;
+}
+
+.clearfix:after {
 	height:0;
 	font-size:0;
 	visibility:hidden;
@@ -107,16 +123,8 @@ figcaption{
 	clear:both;
 }
 
-.logo { 
-	font-family: 'Helvetica', 'Arial', sans-serif;
-	text-transform: none;
-	letter-spacing: 2px;
-	color: #186A89;
-	font-size: 3em; 
-	padding-left: .75em;
-}
 
-hr{
+hr {
   width: 100%;
   border: none;
 }
@@ -131,25 +139,18 @@ hr{
 	font-size: 1.5em;
 }
 
-.lheatpaintings{
-	width: 23%;
-	padding-left:1.25em;
-	margin: 1%;
-	float: left;
-}
-
-i{
+i {
 	font-style: italic;
 }
 
-#mailto{ 
+#mailto { 
 	color: #000;
 }
 
 p {
   font-size: 1em;
   line-height: 1.5em;
-  padding-left: 2.5em;
+  padding-left: 2em;
   padding-right: 2em;
   color: #422418;
 }
@@ -160,9 +161,10 @@ ul {
   padding: 2em;
 }
 
-h2, h3{
+h2, h3 {
   padding-left: 2em;
   color: #000;
+  font-size: 1em;
 }
 
 h4 {
@@ -170,6 +172,7 @@ h4 {
 	display: inline;
 	padding-left: 1.75em;	
 }
+
 footer {
 	clear: both;
 	font-size: .8em;
@@ -178,17 +181,10 @@ footer {
 	padding: 3em 0 3em 0;
 }
 
-#circumflex { 
-	color: #52F5E7;
+#chevron { 
+	color: #fff;
 	display: inline;
 }
-
-#mailto {
-  font-size: 1em;
-  color: #fff;
-  line-height: 1.5em;
-  padding-left: .66em;
- }
 
 .clearfix:footer {
 	align: left;
@@ -198,6 +194,10 @@ footer {
 	clear: both;
 	height: 0;
 	font-size: 0;
+}
+
+.bio {
+	max-width: 200px;
 }
 
 @media  screen and (min-width: 1900px){
@@ -229,6 +229,7 @@ footer {
  		text-align:center;
  	}
  	nav a {
+ 		text-align:center;
  		float: none;
  		width: auto;
  		padding: .25em 0;
