@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 }
 
 body {
@@ -241,10 +241,10 @@ footer {
 }
 
 .bio img {
-	border:0;
+	border: 0;
 }
 
-@media  screen and (min-width: 1900px){
+@media screen and (min-width: 1900px){
 	body {
 		font-size: 24px;
 	}
@@ -254,31 +254,31 @@ footer {
 }
 
 @media screen and (max-width: 1190px){
-	.lheatpaintings{
-		width: 48%;
-		padding: 1%;
-		float: left;
-		height: 387px;
-}
+
 	.bio {
 	width: 25%;
 	padding-top: 2em;
 	padding-left: 2em;
-		}
+	}
 }
 
 @media screen and (max-width: 768px){
  	
- 	.logo{
- 		text-align:center;
+ 	.logo {
+ 		text-align: center;
  	}
  	nav a {
- 		text-align:center;
  		float: none;
  		width: auto;
  		padding: .25em 0;
  		display: none;
  	}
+
+ 	.tagline {
+ 		text-align: center;
+ 		float: none;
+ 	}
+
  	#mobile {
  		display: block;
  	}
@@ -287,12 +287,12 @@ footer {
  	}
 
  	.bio {
- 		width: 25%;
+ 		width: 25%;/*
     	display: block;
     	margin-left: auto;
     	margin-right: auto;
     	height: auto;
-    	padding-top: 10px;
+    	padding-top: 10px;*/
  	}
 }
 
@@ -301,8 +301,8 @@ footer {
 footer {
 		float: none;
 		padding-left: 1.75em;	
+	}
 }
-
 /* @media screen and (max-width: 584px){
 	span {
 		
@@ -314,11 +314,7 @@ footer {
 /* mobile */
 
 @media screen and (max-width: 568px){
-	.lheatpaintings{
-		width: 100%;
-		float: none;
-		height: auto;
-	}
+	
 footer {
 		float: none;
 }
