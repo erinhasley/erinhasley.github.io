@@ -140,6 +140,18 @@ figcaption {
 	margin-left: .75em;
 }
 
+#lg_panel_hor {
+	max-width: 3254px;
+	display: block;
+	margin-left: .75em;
+}
+
+#med_panel_sq {
+	max-width: 2669px;
+	display: block;
+	margin-left: .75em;
+}
+
 .clearfix:after {
 	height:0;
 	font-size:0;
